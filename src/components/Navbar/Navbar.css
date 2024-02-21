@@ -1,0 +1,130 @@
+@import "../../vars.css";
+
+.Nav_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg);
+    width: 100vw;
+    max-height: 38px;
+    justify-content: space-between;
+}
+
+/*sub-container */
+.title {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: 600px;
+    line-height: 38px;
+    margin-top: 5px;
+}
+
+.hamburger {
+    color: black;
+    border: 1px solid black;
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+ul li {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+}
+
+
+ul li a {
+    text-decoration: none;
+    row-gap: 47px;
+}
+
+@media screen and (max-width: 830px) {
+    .Nav_container {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        max-height: 7.5rem;
+        flex-direction: column;
+        background-color: var(--color-bg);
+        border: 5px solid white;
+    }
+
+    .section1 {
+        display: flex;
+        height: 150px;
+        align-items: center;
+    }
+
+    /* portfolio title */
+    .title {
+        position: absolute;
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: 600px;
+        line-height: 38px;
+        left: 0;
+        margin-top: 30px;
+        text-decoration: none;
+        height: 38px;
+        left: 22px
+    }
+
+    .hamburger {
+        display: flex;
+        outline: none;
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        cursor: pointer;
+        top: 61px;
+        height: 38px;
+        width: 30px;
+        background-color: black;
+        outline: transparent;
+        border: none;
+    }
+
+    /* menu items */
+    ul {
+        display: flex;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+        width: 191px;
+        height: 200px;
+        border-radius: 10px;
+        top: 95px;
+        background: rgb(25, 55, 109);
+        background: linear-gradient(0deg,
+                rgba(25, 55, 109, 0.2)0%, rgb(158, 180, 223) 100%);
+        border-radius: 8px;
+        align-items: center;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+    }
+
+    .menuOpenList {
+        display: flex;
+
+    }
+
+
+    ul li {
+        display: flex;
+        justify-items: flex-end;
+        padding: 10px;
+    }
+
+
+
+}
