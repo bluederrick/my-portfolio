@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { getUrl } from "../../utilis";
 import "./Navbar.css";
 
-
 const Navbar = () => {
-
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <nav className="Nav_container">

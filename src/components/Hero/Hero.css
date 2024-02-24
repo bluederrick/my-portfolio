@@ -4,18 +4,15 @@
     display: flex;
     flex-direction: row;
     color: white;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 20px;
 }
-
-.sub-hero-section {}
 
 .hero-title {
     height: 84px;
     top: 272px;
-    width: 353PX
+    width: 353px;
 }
-
 
 .btn {
     width: 180px;
@@ -25,7 +22,16 @@
     border-radius: 100px;
     cursor: pointer;
     background: rgba(87, 108, 188, 1);
+    border: none;
+}
 
+.float-left {
+    left: 0;
+
+}
+
+.float-right {
+    right: 0;
 
 }
 
@@ -45,20 +51,108 @@ a {
     border: none;
 }
 
-
-img {
-    width: 300px;
+.heroimage {
+    height: 280px;
+    left: 0;
+    float: right;
+    animation-name: infinity;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes infinity {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
 
 @media screen and (max-width: 830px) {
-
     .hero-section {
-        margin-top: 100px;
-        display: flex;
-        background-color: rgb(234, 234, 237);
-        color: white;
-        /* color: white; */
 
+        margin-top: 0;
+        display: row;
+        justify-content: center;
+        color: white;
+        /* margin-left: -50px; */
+        /* width: 50%; */
+        margin-left: auto
+    }
+
+    .float {
+        text-align: center;
+        margin-top: 300px;
+
+    }
+
+    .heroimage {
+        position: absolute;
+        bottom: 400px;
+        margin-left: 150px;
+        z-index: 1;
+        width: 320px;
+        animation-name: infinity;
+        animation-duration: 3s;
+        /* how many times it should run */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+
+    .hero-left {
+        border: 1px solid white;
+        width: 50%;
+        /* margin-top: 0; */
+        /* float: left; */
+        padding: 20px;
+    }
+
+    .hero-title {
+        width: 3000px;
+    }
+
+    .hero-p {
+        /* text-align: center; */
+        color: rgb(232, 217, 217);
+        border: none;
+        width: 150px;
+        margin: auto;
+        padding: 10px;
+
+    }
+
+    .btn {
+        border-radius: 100px;
+        cursor: pointer;
+        background: rgba(87, 108, 188, 1);
+        margin-top: 120px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: larger;
+        color: white;
+    }
+
+    @keyframes infinity {
+        0% {
+            transform: translate(0, 0px);
+        }
+
+        50% {
+            transform: translate(0, 20px);
+        }
+
+        100% {
+            transform: translate(0, -3px);
+        }
     }
 }
